@@ -1,12 +1,17 @@
 <!-- <h2>Welcome to My First Angular Project</h2> -->
 
 <div>
-  <h1>{{this.title}}</h1>
+  <!-- <h1>{{this.title}}</h1> -->
+  <h1>Hello {{this.userName}} From Bridgelabz</h1>
    <img [src]="imgUrl"
      alt="The bridgelabz logo.a Bridge to Emplyement through a Labs works"
      (click)="clickEvent($event)"
      />
 </div>
-
+<div>
+   <br/>
+      <label>User Name: </label>
+      <input [(ngModel)]="userName"/> <br/><br/>
+</div>
 
 <router-outlet></router-outlet>
