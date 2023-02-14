@@ -11,7 +11,8 @@
 <div>
    <br/>
       <label>User Name: </label>
-      <input [(ngModel)]="userName"/> <br/><br/>
+      <input [(ngModel)]="userName" (input)="onInput($event)"/> <br/><br/>
+      <span class=error-output>{{this.nameError}}</span>
 </div>
 
 <router-outlet></router-outlet>
